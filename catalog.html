@@ -19,7 +19,7 @@
                 <li><a>Магазин</a></li>
                 <li><a href="blank.html">Контакты</a></li>
             </ul>
-            <a><button type="button">ярлык</button>Корзина</a>
+            <a href="blank.html">Корзина</a>
         </nav>
     </header>
     <main>
@@ -30,22 +30,22 @@
                 <fieldset>
                     <legend>Стоимость:</legend>
                     <input type="range" name="cost" id="filter-cost" min="0" max="15000">
-                    <label>от <input type="number" name="begin" id="filter-begin"></label>
-                    <label>до <input type="number" name="finish" id="filter-finish"></label>
+                    <label>от <input type="number" name="price-begin"></label>
+                    <label>до <input type="number" name="price-finish"></label>
                 </fieldset>
                 <fieldset>
                     <legend>Сетка:</legend>
                     <ul>
                         <li>
-                            <input type="radio" name="adaptive" id="filter-adaptive">
-                            <label for="filter-adaptive">АдаптивнаяРезиновая</label>
+                            <input type="radio" checked name="layout" value="adaptive" id="filter-adaptive">
+                            <label for="filter-adaptive">Адаптивная</label>
                         </li>
                         <li>
-                            <input type="radio" name="fix" id="filter-fix">
+                            <input type="radio" name="layout" value="fix" id="filter-fix">
                             <label for="filter-fix">Фиксированная</label>
                         </li>
                         <li>
-                            <input type="radio" name="rubber" id="filter-rubber">
+                            <input type="radio" name="layout" value="rubber" id="filter-rubber">
                             <label for="filter-rubber">Резиновая</label>
                         </li>
                     </ul>
@@ -58,7 +58,7 @@
                             <label for="filter-slider">Слайдер</label>
                         </li>
                         <li>
-                            <input type="checkbox" checked name="advantages" id="filter-advantages">
+                            <input type="checkbox" name="advantages" id="filter-advantages">
                             <label for="filter-advantages">Блок преимуществ</label>
                         </li>
                         <li>
@@ -66,109 +66,166 @@
                             <label for="filter-news">Новости</label>
                         </li>
                         <li>
-                            <input type="checkbox" checked name="gallery" id="filter-gallery">
+                            <input type="checkbox" name="gallery" id="filter-gallery">
                             <label for="filter-gallery">Галерея</label>
                         </li>
                         <li>
-                            <input type="checkbox" checked name="basket" id="filter-basket">
+                            <input type="checkbox" name="basket" id="filter-basket">
                             <label for="filter-basket">Корзина</label>
                         </li>
                     </ul>
                 </fieldset>
-                <button type="submit">ПОКАЗАТЬ</button>
-                <h2>Сортировать:</h2>
-                <fieldset>
-                    <legend>Тип сортировки</legend>
-                    <ul>
-                        <li>
-                            <input type="radio" name="price" id="filter-price">
-                            <label for="filter-price">по цене</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="type" id="filter-type">
-                            <label for="filter-type">по типу</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="name" id="filter-name">
-                            <label for="filter-name">по названию</label>
-                        </li>
-                    </ul>
-                </fieldset>
-                <fieldset>
-                    <legend>Направление сортировки</legend>
-                    <ul>
-                        <li>
-                            <input type="radio" checked name="decrease" id="filter-decrease">
-                            <label for="filter-decrease">по цене</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="increase" id="filter-increase">
-                            <label for="filter-increase">по типу</label>
-                        </li>
-                    </ul>
-                </fieldset>
+                <button type="submit">Показать</button>
             </form>
+
+            <h2>Сортировать:</h2>
+            <h3>Тип сортировки</h3>
+            <ul>
+                <li>
+                    <a href="blank.html">по цене</a>
+                </li>
+                <li>
+                    <a href="blank.html">по типу</a>
+                </li>
+                <li>
+                    <a href="blank.html">по названию</a>
+                </li>
+            </ul>
+
+            <h3>Направление сортировки</h3>
+            <ul>
+                <li>
+                    <a href="blank.html">по убыванию</a>
+                </li>
+                <li>
+                    <a href="blank.html">по возрастанию</a>
+                </li>
+            </ul>
         </section>
         <section>
             <h2>Шаблоны</h2>
             <ul>
                 <li>
-                    <a href="#">url-1</a>
-                    <a href="#">url-2</a>
-                    <a href="#">url-3</a>
-                    <a href="#">url-4</a>
-                    <a href="#">url-5</a>
-                    <a href="#">url-6</a>
+                    <a href="blank.html">
+                        <img src="" width="358" height="578" alt="Седона">
+                    </a>
+                    <a href="blank.html">
+                        <h3>Седона</h3>
+                    </a>
+                    <p>Информационный сайт<br>
+                        для туристов</p>
+                    <a href="blank.html">
+                        9 900 ₽
+                    </a>
                 </li>
+                <li>
+                    <a href="blank.html">
+                        <img src="" width="358" height="578" alt="Пинк">
+                    </a>
+                    <a href="blank.html">
+                        <h3>Pink App</h3>
+                    </a>
+                    <p>Продуктовый лендинг<br>
+                        приложения для iOS и Android</p>
+                    <a href="blank.html">
+                        9 900 ₽
+                    </a>
+                </li>
+                <li>
+                    <a href="blank.html">
+                        <img src="" width="358" height="578" alt="Барбершоп">
+                    </a>
+                    <a href="blank.html">
+                        <h3>Barbershop</h3>
+                    </a>
+                    <p>Сайт салона красоты.<br>
+                        Для мужчин, да.</p>
+                    <a href="blank.html">
+                        9 900 ₽
+                    </a>
+                </li>
+                <li>
+                    <a href="blank.html">
+                        <img src="" width="358" height="578" alt="Мишка">
+                    </a>
+                    <a href="blank.html">
+                        <h3>MISHKA</h3>
+                    </a>
+                    <p>Интернет-магазин<br>
+                        вязаных игрушек</p>
+                    <a href="blank.html">
+                        9 900 ₽
+                    </a>
+                </li>
+                <li>
+                    <a href="blank.html">
+                        <img src="" width="358" height="578" alt="A Plus">
+                    </a>
+                    <a href="blank.html">
+                        <h3>A Plus</h3>
+                    </a>
+                    <p>Лендинг курсов повышения квалификации</p>
+                    <a href="blank.html">
+                        9 900 ₽
+                    </a>
+                </li>
+                <a href="blank.html">
+                    <img src="" width="358" height="578" alt="КВАСТ">
+                </a>
+                <a href="blank.html">
+                    <h3>КВАСТ</h3>
+                </a>
+                <p>Промо-сайт производителя<br>
+                    крафтового кваса</p>
+                <a href="blank.html">
+                    9 900 ₽
+                </a>
             </ul>
-        </section>
-        <section>
-            <h2>Пагинация</h2>
             <ul>
                 <li>
                     <a>1</a>
                 </li>
                 <li>
-                    <a href="#">2</a>
+                    <a href="blank.html">2</a>
                 </li>
                 <li>
-                    <a href="#">3</a>
+                    <a href="blank.html">3</a>
                 </li>
                 <li>
-                    <a href="#">Следующая</a>
+                    <a href="blank.html">Следующая</a>
                 </li>
             </ul>
         </section>
-        < </main>
-            <footer>
-                <section>
-                    <!--Здесь будет карта-->
-                </section>
-                <section>
-                    <h2>Контакты</h2>
-                    <p>NЁRDS DESIGN STUDIO</p>
-                    <p>191186, Санкт-Петербург,<br>
-                        ул. Б. Конюшенная, д. 19/8<br>
-                        тел. +7 (812) 275-75-75</p>
-                    <button type="button">Напишите нам</button>
-                </section>
-                <section>
-                    <h2>Давайте дружить!</h2>
-                    <ul>
-                        <li>
-                            <a href="#">Вконтакте</a>
-                        </li>
-                        <li>
-                            <a href="#">Фейсбук</a>
-                        </li>
-                        <li>
-                            <a href="#">Инстаграм</a>
-                        </li>
-                    </ul>
-                    <p><b>Давайте дружить, это выгодно!</b></p>
-                    <p>Скидка 10% для друзей из социальных сетей.</p>
-                </section>
-            </footer>
+    </main>
+    <footer>
+        <section>
+            <!--Здесь будет карта-->
+        </section>
+        <section>
+            <h2>Контакты</h2>
+            <p>NЁRDS DESIGN STUDIO</p>
+            <p>191186, Санкт-Петербург,<br>
+                ул. Б. Конюшенная, д. 19/8<br>
+                тел. +7 (812) 275-75-75</p>
+            <a href="blank.html">Напишите нам</a>
+        </section>
+        <section>
+            <h2>Давайте дружить!</h2>
+            <ul>
+                <li>
+                    <a href="#">Вконтакте</a>
+                </li>
+                <li>
+                    <a href="#">Фейсбук</a>
+                </li>
+                <li>
+                    <a href="#">Инстаграм</a>
+                </li>
+            </ul>
+            <p><b>Давайте дружить, это выгодно!</b></p>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+        </section>
+    </footer>
 
 </body>
 
