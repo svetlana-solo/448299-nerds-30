@@ -150,13 +150,13 @@
     </section>
     <section class="contacts">
       <h2>Контакты</h2>
-      <p>NЁRDS DESIGN STUDIO</p>
-      <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8<br> тел. +7 (812) 275-75-75</p>
+      <p class="contact-title">NЁRDS DESIGN STUDIO</p>
+      <p class="contact-text">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8<br> тел. +7 (812) 275-75-75</p>
       <a class="button" href="blank.html">Напишите нам</a>
     </section>
     <section class="footer-social">
       <h2>Давайте дружить!</h2>
-      <ul class="socials-list">
+      <ul class="social-list">
         <li>
           <a class="social-item" href="#"><span class="hidden">Вконтакте</span></a>
         </li>
@@ -167,24 +167,26 @@
           <a class="social-item" href="#"><span class="hidden">Инстаграм</span></a>
         </li>
       </ul>
-      <p><b>Давайте дружить, это выгодно!</b></p>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+      <p class="social-title"><b>Давайте дружить, это выгодно!</b></p>
+      <p class="social-text">Скидка 10% для друзей из социальных сетей.</p>
     </section>
   </footer>
   <section class="modal">
-    <h2>Напишите нам</h2>
+    <h2 class="modal-title">Напишите нам</h2>
     <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <label for="login-login">Ваше имя:</label>
-        <input class="login-user" id="login-login" type="text" name="login" placeholder="Имя Фамилия">
+      <p class="field">
+        <label class="field-label" for="login-login">Ваше имя:</label>
+        <input class="field-input login-user" id="login-login" type="text" name="login" placeholder="Имя Фамилия">
       </p>
-      <p>
-        <label for="login-email">Ваш email:</label>
-        <input class="login-icon-user" id="login-login" type="email" name="login" placeholder="email@example.com">
+      <p class="field">
+        <label class="field-label" for="login-email">Ваш email:</label>
+        <input class="field-input login-email-user" id="login-email" type="email" name="email"
+          placeholder="email@example.com">
       </p>
-      <p>
-        <label for="login-text">Текст письма:</label>
-        <input class="login-text" id="login-text" type="textarea" name="text" placeholder="В свободной форме">
+      <p class="field">
+        <label class="field-label" for="login-text">Текст письма:</label>
+        <input class="field-input login-text" id="login-text" type="textarea" name="text"
+          placeholder="В свободной форме">
       </p>
       <button class="button" type="submit">Отправить</button>
     </form>
