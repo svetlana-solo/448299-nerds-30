@@ -59,19 +59,21 @@
     </section>
   </footer>
   <section class="modal">
-    <h2>Напишите нам</h2>
-    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <label for="login-login">Ваше имя:</label>
-        <input class="login-user" id="login-login" type="text" name="login" placeholder="Имя Фамилия">
+    <h2 class="modal-title">Напишите нам</h2>
+    <form class=feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="field">
+        <label class="field-label" for="login-name">Ваше имя:</label>
+        <input class="field-input login-user" id="login-name" type="text" name="name" placeholder="Имя Фамилия">
       </p>
-      <p>
-        <label for="login-email">Ваш email:</label>
-        <input class="login-icon-user" id="login-login" type="email" name="login" placeholder="email@example.com">
+      <p class="field">
+        <label class="field-label" for="login-email">Ваш email:</label>
+        <input class="field-input login-email-user" id="login-email" type="email" name="email"
+          placeholder="email@example.com">
       </p>
-      <p>
-        <label for="login-text">Текст письма:</label>
-        <input class="login-text" id="login-text" type="textarea" name="text" placeholder="В свободной форме">
+      <p class="field">
+        <label class="field-label" for="login-text">Текст письма:</label>
+        <input class="field-input login-text" id="login-text" type="textarea" name="text"
+          placeholder="В свободной форме">
       </p>
       <button class="button" type="submit">Отправить</button>
     </form>
