@@ -30,13 +30,13 @@
   </header>
 
   <main class="page-main">
-    <h1>Нёрдс</h1>
+    <h1 class="hidden">Нёрдс</h1>
     <section>
-      <h2>Информация</h2>
+      <h2 class="hidden">Информация</h2>
 
       <div class="slider">
         <div>
-          <div class="slide">
+          <div class="slide slide-active">
             <p class="slide-title">Долго, дорого,<br>
               скурпулезно.</p>
             <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
@@ -59,15 +59,15 @@
           </div>
         </div>
         <ul class="slider-list">
-          <li class="slide-item"><button type="button">Слайд 1</button></li>
+          <li class="slide-item slide-item-active"><button type="button">Слайд 1</button></li>
           <li class="slide-item"><button type="button">Слайд 2</button></li>
           <li class="slide-item"><button type="button">Слайд 3</button></li>
         </ul>
       </div>
-
     </section>
-    <section class="products">
-      <h2>Продукты</h2>
+
+    <section class="products container">
+      <h2 class="hidden">Продукты</h2>
       <ul class="products-list">
         <li class="product-item product-item-sites">
           <h3>Веб-сайты</h3>
@@ -86,40 +86,45 @@
         </li>
       </ul>
     </section>
-    <section class="features">
-      <h2>О нас</h2>
-      <p class="features-title">Мы — маленькая, но гордая <br>
-        дизайн-студия из Краснодара.</p>
-      <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет <br> превыше креатива. Работаем не
-        покладая рук, как роботы.</p>
-      <p class="features-subtitle">Выполняем заказы на разработку:</p>
-      <ul class="features-list">
-        <li class="feature-item">Веб-сайтов любой сложности</li>
-        <li class="feature-item">Мобильных приложений для iOS и Android</li>
-        <li class="feature-item">Слайдшоу и видео для корпоративных презентаций</li>
-      </ul>
-      <h3>Статистика</h3>
-      <p class="stat-title">с 2004 года Любим точность во всем:</p>
-      <ul class="statistics">
-        <li class="stat-item">
-          <p class="stat-subtitle"><span>146</span>%</p>
-          <p>Уровень<br> самоотдачи
-          </p>
-        </li>
-        <li class="stat-item">
-          <p class="stat-subtitle"><span>100</span>%</p>
-          <p>Соблюдение<br> сроков
-          </p>
-        </li>
-        <li class="stat-item">
-          <p class="stat-subtitle"><span>50</span>%</p>
-          <p>Минимальная<br> предоплата
-          </p>
-        </li>
-      </ul>
+    <section class="features container">
+      <div class="features-wrapper">
+        <h2 class="hidden">О нас</h2>
+        <p class="features-title">Мы — маленькая, но гордая <br>
+          дизайн-студия из Краснодара.</p>
+        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет <br> превыше креатива. Работаем
+          не
+          покладая рук, как роботы.</p>
+        <p class="features-subtitle">Выполняем заказы на разработку:</p>
+        <ul class="features-list">
+          <li class="feature-item">Веб-сайтов любой сложности</li>
+          <li class="feature-item">Мобильных приложений для iOS и Android</li>
+          <li class="feature-item">Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+      </div>
+      <div class="stat-wrapper">
+        <h3 class="hidden">Статистика</h3>
+        <p class="stat-title">с 2004 года Любим точность во всем:</p>
+        <ul class="statistics">
+          <li class="stat-item">
+            <p class="stat-subtitle"><span>146</span>%</p>
+            <p>Уровень<br> самоотдачи
+            </p>
+          </li>
+          <li class="stat-item">
+            <p class="stat-subtitle"><span>100</span>%</p>
+            <p>Соблюдение<br> сроков
+            </p>
+          </li>
+          <li class="stat-item">
+            <p class="stat-subtitle"><span>50</span>%</p>
+            <p>Минимальная<br> предоплата
+            </p>
+          </li>
+        </ul>
+      </div>
     </section>
-    <section class="partners">
-      <h2>Партнеры</h2>
+    <section class="partners container">
+      <h2 class="hidden">Партнеры</h2>
       <ul class="partners-list">
         <li class="partner-item">
           <a href="https://htmlacademy.ru/intensive/htmlcss">
@@ -148,14 +153,17 @@
     <section class="map">
       <img src="img/map.png" width="1440" height="416" alt="Карта проезда к студии Нердс">
     </section>
-    <section class="contacts">
-      <h2>Контакты</h2>
-      <p class="contact-title">NЁRDS DESIGN STUDIO</p>
-      <p class="contact-text">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8<br> тел. +7 (812) 275-75-75</p>
-      <a class="button" href="blank.html">Напишите нам</a>
-    </section>
-    <section class="footer-social">
-      <h2>Давайте дружить!</h2>
+    <div class="contact-wrapper container">
+      <section class="contacts">
+        <h2 class="hidden">Контакты</h2>
+        <p class="contact-title">NЁRDS DESIGN STUDIO</p>
+        <p class="contact-text">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8<br> тел. +7 (812) 275-75-75
+        </p>
+        <a class="button" href="blank.html">Напишите нам</a>
+      </section>
+    </div>
+    <section class="footer-social container">
+      <h2 class="hidden">Давайте дружить!</h2>
       <ul class="social-list">
         <li>
           <a class="social-item" href="#"><span class="hidden">Вконтакте</span></a>
@@ -196,3 +204,5 @@
 </body>
 
 </html>
+
+<!--Все сломалось-->

@@ -74,6 +74,20 @@ img {
   height: auto;
 }
 
+.page {
+  height: 100%;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.slider {
+  background-color: var(--color-gray-100);
+  padding: 10px;
+}
+
 /* Utils */
 
 .hidden {
@@ -84,17 +98,18 @@ img {
 
 .main-nav {
   display: grid;
+  grid-template-columns: 160px 1fr min-content;
+  margin: 0 auto;
+  width: 1200px;
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
   color: var(--color-black);
 }
 
-/* может быть будет
-.main-nav-wrapper {
-    background-color: var(--color-gray-100);
+.main-header {
+  background-color: var(--color-gray-100);
 }
-*/
 
 .nav-item {
   font-weight: 500;
@@ -157,6 +172,16 @@ img {
   text-transform: uppercase;
 }
 
+.slide {
+  display: none;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.slide-active {
+  display: block;
+}
+
 /* Buttons */
 
 .button {
@@ -182,6 +207,11 @@ img {
 
 .products-list {
   list-style: none;
+  display: grid;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 100px;
 }
 
 .products-list h3 {
@@ -237,6 +267,12 @@ img {
 
 /* Features */
 
+.features {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 40px;
+}
+
 .features-list {
   list-style: none;
 }
@@ -255,6 +291,10 @@ img {
 }
 
 .statistics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -275,7 +315,12 @@ img {
 }
 
 .partners-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 40px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .partner-item a {
@@ -384,6 +429,15 @@ img {
 
 /* Footer */
 
+.map img {
+  width: 100%;
+}
+
+.contact {
+  width: 320px;
+  height: 310px;
+}
+
 .contact-title {
   color: var(--color-black);
   font-weight: 700;
@@ -399,8 +453,18 @@ img {
 
 /* Socials */
 
+.footer-social {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
 .social-list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: repeat(3, 1fr);
   list-style: none;
+  grid-row: span 2;
 }
 
 .social-item {
@@ -426,7 +490,8 @@ img {
 }
 
 .social-text {
-  color: var(--color-gray-700)
+  color: var(--color-gray-700);
+  grid-column-start: 2;
 }
 
 /* Modal */
