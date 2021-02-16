@@ -30,13 +30,16 @@
   </header>
 
   <main class="page-main">
-    <h1>Магазин готовых шаблонов</h1>
-    <div class="main-catalog-wrapper">
+    <div class="filled-section">
+      <h1 class="container">Магазин готовых шаблонов</h1>
+    </div>
+    <div class="main-catalog-wrapper container">
       <section class="main-filter">
         <h2 class="hidden">Фильтр товаров</h2>
         <form action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend>Стоимость:</legend>
+
             <input type="range" name="cost" id="filter-cost" min="0" max="15000">
             <label>от <input type="number" name="price-begin"></label>
             <label>до <input type="number" name="price-finish"></label>
