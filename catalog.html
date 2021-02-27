@@ -15,7 +15,7 @@
 <body class="page-body">
 
   <header class="main-header">
-    <nav class="main-nav">
+    <nav class="main-nav container">
       <a class="main-header-logo" href="index.html">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
       </a>
@@ -37,51 +37,75 @@
       <section class="main-filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form action="https://echo.htmlacademy.ru" method="get">
-          <fieldset>
-            <legend>Стоимость:</legend>
-
-            <input type="range" name="cost" id="filter-cost" min="0" max="15000">
-            <label>от <input type="number" name="price-begin"></label>
-            <label>до <input type="number" name="price-finish"></label>
+          <fieldset class="filter-items">
+            <legend class="filter-title cost-title">Стоимость:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="
+                    width: 70%;
+                    margin-left: 0%
+                  "></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0"></div>
+                <div class="toggle toggle-max" tabindex="0"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">
+                  от <input type="text" name="min-price" value="0">
+                </label>
+                <label class="max-price">
+                  до <input type="text" name="max-price" value="15 000">
+                </label>
+              </div>
+            </div>
           </fieldset>
-          <fieldset>
-            <legend>Сетка:</legend>
+          <fieldset class="filter-items">
+            <legend class="filter-title">Сетка:</legend>
             <ul class="filter-list">
               <li class="radio-item filter-item">
-                <input class="visually-hidden" type="radio" checked name="layout" value="adaptive" id="filter-adaptive">
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" checked name="layout"
+                  value="adaptive" id="filter-adaptive">
                 <label for="filter-adaptive">Адаптивная</label>
               </li>
               <li class="radio-item filter-item">
-                <input class="visually-hidden" type="radio" name="layout" value="fix" id="filter-fix">
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="layout" value="fix"
+                  id="filter-fix">
                 <label for="filter-fix">Фиксированная</label>
               </li>
               <li class="radio-item filter-item">
-                <input class="visually-hidden" type="radio" name="layout" value="rubber" id="filter-rubber">
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="layout" value="rubber"
+                  id="filter-rubber">
                 <label for="filter-rubber">Резиновая</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend>Особенности:</legend>
+          <fieldset class="filter-items">
+            <legend class="filter-title">Особенности:</legend>
             <ul class="filter-list">
               <li class="checkbox-item filter-item">
-                <input class="visually-hidden" type="checkbox" checked name="slider" id="filter-slider">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" checked name="slider"
+                  id="filter-slider">
                 <label for="filter-slider">Слайдер</label>
               </li>
               <li class="checkbox-item filter-item">
-                <input class="visually-hidden" type="checkbox" name="advantages" id="filter-advantages">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="advantages"
+                  id="filter-advantages">
                 <label for="filter-advantages">Блок преимуществ</label>
               </li>
               <li class="checkbox-item filter-item">
-                <input class="visually-hidden" type="checkbox" checked name="news" id="filter-news">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" checked name="news"
+                  id="filter-news">
                 <label for="filter-news">Новости</label>
               </li>
               <li class="checkbox-item filter-item">
-                <input class="visually-hidden" type="checkbox" name="gallery" id="filter-gallery">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="gallery"
+                  id="filter-gallery">
                 <label for="filter-gallery">Галерея</label>
               </li>
               <li class="checkbox-item filter-item">
-                <input class="visually-hidden" type="checkbox" name="basket" id="filter-basket">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="basket"
+                  id="filter-basket">
                 <label for="filter-basket">Корзина</label>
               </li>
             </ul>
@@ -90,7 +114,7 @@
         </form>
       </section>
       <section class="main-sorting">
-        <h2 class="sorting-title">Сортировать:</h2>
+        <h2 class="filter-title">Сортировать:</h2>
         <h3 class="visually-hidden">Тип сортировки</h3>
         <ul class="sorting-type-list">
           <li>
@@ -107,10 +131,13 @@
         <h3 class="visually-hidden">Направление сортировки</h3>
         <ul class="sorting-direction-list">
           <li>
-            <a class="sorting-decrease sorting-decrease-active" href="blank.html">по убыванию</a>
+            <a class="sorting-decrease sorting-direction sorting-decrease-active" href="blank.html"><span
+                class=visually-hidden>по
+                убыванию</span></a>
           </li>
           <li>
-            <a class="sorting-increase" href="blank.html">по возрастанию</a>
+            <a class="sorting-increase sorting-direction" href="blank.html"><span class=visually-hidden>по
+                возрастанию</span></a>
           </li>
         </ul>
       </section>
@@ -238,13 +265,13 @@
       <h2 class="visually-hidden">Давайте дружить!</h2>
       <ul class="social-list">
         <li>
-          <a class="social-item" href="#"><span class="visually-hidden">Вконтакте</span></a>
+          <a class="social-item vk" href="#"><span class="visually-hidden">Вконтакте</span></a>
         </li>
         <li>
-          <a class="social-item" href="#"><span class="visually-hidden">Фейсбук</span></a>
+          <a class="social-item fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
         </li>
         <li>
-          <a class="social-item" href="#"><span class="visually-hidden">Инстаграм</span></a>
+          <a class="social-item insta" href="#"><span class="visually-hidden">Инстаграм</span></a>
         </li>
       </ul>
       <p class="social-title"><b>Давайте дружить, это выгодно!</b></p>
@@ -253,7 +280,7 @@
   </footer>
   <section class="modal">
     <h2 class="modal-title">Напишите нам</h2>
-    <form class=feedback-form" action="https://echo.htmlacademy.ru" method="post">
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
       <p class="field">
         <label class="field-label" for="login-name">Ваше имя:</label>
         <input class="field-input login-user" id="login-name" type="text" name="name" placeholder="Имя Фамилия">
@@ -270,7 +297,9 @@
       </p>
       <button class="button" type="submit">Отправить</button>
     </form>
-    <button class="modal-close" type="button">Закрыть</button>
+    <button class="modal-close" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
   </section>
 
 </body>
