@@ -14,7 +14,7 @@
 
 <body class="page-body">
 
-  <header class="main-header">
+  <header class="main-header filled-section">
     <nav class="main-nav container">
       <a class="main-header-logo" href="index.html">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
@@ -61,7 +61,7 @@
             </div>
           </fieldset>
           <fieldset class="filter-items">
-            <legend class="filter-title">Сетка:</legend>
+            <legend class="filter-title layout">Сетка:</legend>
             <ul class="filter-list">
               <li class="radio-item filter-item">
                 <input class="visually-hidden filter-input-radio filter-input" type="radio" checked name="layout"
@@ -81,7 +81,7 @@
             </ul>
           </fieldset>
           <fieldset class="filter-items">
-            <legend class="filter-title">Особенности:</legend>
+            <legend class="filter-title filter-advant">Особенности:</legend>
             <ul class="filter-list">
               <li class="checkbox-item filter-item">
                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" checked name="slider"
@@ -90,7 +90,7 @@
               </li>
               <li class="checkbox-item filter-item">
                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="advantages"
-                  id="filter-advantages">
+                  id="filter-">
                 <label for="filter-advantages">Блок преимуществ</label>
               </li>
               <li class="checkbox-item filter-item">
@@ -131,13 +131,14 @@
         <h3 class="visually-hidden">Направление сортировки</h3>
         <ul class="sorting-direction-list">
           <li>
-            <a class="sorting-decrease sorting-direction sorting-decrease-active" href="blank.html"><span
-                class=visually-hidden>по
-                убыванию</span></a>
+            <a class="sorting-decrease sorting-direction sorting-decrease-active" href="blank.html">
+              <span class=visually-hidden>по убыванию</span>
+            </a>
           </li>
           <li>
-            <a class="sorting-increase sorting-direction" href="blank.html"><span class=visually-hidden>по
-                возрастанию</span></a>
+            <a class="sorting-increase sorting-direction" href="blank.html">
+              <span class=visually-hidden>по возрастанию</span>
+            </a>
           </li>
         </ul>
       </section>
@@ -255,8 +256,8 @@
         <section class="contacts">
           <h2 class="visually-hidden">Контакты</h2>
           <p class="contact-title">NЁRDS DESIGN STUDIO</p>
-          <p class="contact-text">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8<br> тел. +7 (812) 275-75-75
-          </p>
+          <p class="contact-text">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8<br></p>
+          <a class="contact-tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
           <a class="button" href="blank.html">Напишите нам</a>
         </section>
       </div>
@@ -283,17 +284,18 @@
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
       <p class="field">
         <label class="field-label" for="login-name">Ваше имя:</label>
-        <input class="field-input login-user" id="login-name" type="text" name="name" placeholder="Имя Фамилия">
+        <input class="field-input login-user" id="login-name" type="text" name="name" placeholder="Имя Фамилия"
+          pattern="[A-Za-zА-Яа-яЁё]*?\s[A-Za-zА-Яа-яЁё]*" required>
       </p>
       <p class="field">
         <label class="field-label" for="login-email">Ваш email:</label>
         <input class="field-input login-email-user" id="login-email" type="email" name="email"
-          placeholder="email@example.com">
+          placeholder="email@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
       </p>
       <p class="field">
         <label class="field-label" for="login-text">Текст письма:</label>
-        <input class="field-input login-text" id="login-text" type="textarea" name="text"
-          placeholder="В свободной форме">
+        <textarea class="field-input login-text" id="login-text" name="text" rows="4"
+          placeholder="В свободной форме"></textarea>
       </p>
       <button class="button" type="submit">Отправить</button>
     </form>
