@@ -46,9 +46,11 @@
                     width: 70%;
                     margin-left: 0%">
                   </div>
+                  <div class="toggle toggle-min" tabindex="0"></div>
+                  <div class="toggle toggle-max" style="
+                  left: 142px;
+                  " tabindex="0"></div>
                 </div>
-                <div class="toggle toggle-min" tabindex="0"></div>
-                <div class="toggle toggle-max" tabindex="0"></div>
               </div>
               <div class="price-controls">
                 <label class="min-price">
@@ -255,7 +257,11 @@
   <footer class="main-footer">
     <div class="map-wrapper">
       <section class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2826.4583295105454!2d30.320384796187934!3d59.938649045894756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1615527888281!5m2!1sru!2sru"
+          width="1440" height="416" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         <img src="img/map.png" width="1440" height="416" alt="Карта проезда к студии Нердс">
+
       </section>
       <div class="contact-wrapper container">
         <section class="contacts">
@@ -263,7 +269,7 @@
           <p class="contact-title">NЁRDS DESIGN STUDIO</p>
           <p class="contact-text">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8<br></p>
           <a class="contact-tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-          <a class="button" href="blank.html">Напишите нам</a>
+          <a class="button button-feedback" href="blank.html">Напишите нам</a>
         </section>
       </div>
     </div>
@@ -297,9 +303,9 @@
         <input class="field-input login-email-user" id="login-email" type="email" name="email"
           placeholder="email@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
       </p>
-      <p class="field">
+      <p class="field field-area">
         <label class="field-label" for="login-text">Текст письма:</label>
-        <textarea class="field-input login-text" id="login-text" name="text" rows="4"
+        <textarea class="field-textarea field-input login-text" id="login-text" name="text" rows="4"
           placeholder="В свободной форме"></textarea>
       </p>
       <button class="button" type="submit">Отправить</button>
@@ -308,6 +314,8 @@
       <span class="visually-hidden">Закрыть</span>
     </button>
   </section>
+
+  <script src="js/modal.js"></script>
 
 </body>
 
