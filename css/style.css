@@ -84,6 +84,8 @@ img {
 }
 
 *, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -216,6 +218,7 @@ img {
   border-radius: 3px;
   border: none;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .button:hover {
@@ -341,7 +344,6 @@ img {
 }
 
 .product-item {
-  background-position: top start;
   background-repeat: no-repeat;
   padding-top: 146px;
 }
@@ -930,6 +932,7 @@ img {
 
 .template-description p {
   display: inline-block;
+  vertical-align: middle;
   text-align: center;
   font-size: 16px;
   line-height: 18px;
@@ -1013,6 +1016,7 @@ img {
   left: 0;
   z-index: -1;
   overflow: hidden;
+  background-color: var(--color-gray-100);
 }
 
 .contacts {
@@ -1038,6 +1042,7 @@ img {
 
 .contact-tel {
   display: inline-block;
+  vertical-align: middle;
   color: var(--color-gray-550);
   margin-bottom: 35px;
 }
