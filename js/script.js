@@ -4,6 +4,9 @@ const loginClose = loginPopup.querySelector(".modal-close");
 const loginForm = loginPopup.querySelector(".feedback-form");
 const loginLogin = loginPopup.querySelector(".login-user");
 const loginPassword = loginPopup.querySelector(".login-email-user");
+const sliderButtons = document.querySelectorAll(".slider-list button");
+const sliderSlides = document.querySelectorAll(".slider .slide");
+const sliderButtonItems = document.querySelectorAll(".slider .slide-item")
 
 let isStorageSupport = true;
 let storage = "";
@@ -54,3 +57,25 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+
+for (let i = 0; i < sliderButtons.length; i++) {
+  sliderButtons[i].addEventListener("click", onButtonClick);
+  function onButtonClick(evt) {
+    for (let j = 0; j < sliderSlides.length; j++) {
+      if (i === j) {
+        sliderSlides[j].classList.add("slide-active");
+      } else {
+        sliderSlides[j].classList.remove("slide-active");
+      }
+    }
+    for (let j = 0; j < sliderButtonItems.length; j++) {
+      if (i === j) {
+        sliderButtonItems[j].classList.add("slide-item-active");
+      } else {
+        sliderButtonItems[j].classList.remove("slide-item-active");
+      }
+    }
+  }
+}
+
